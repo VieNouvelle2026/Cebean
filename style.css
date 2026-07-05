@@ -148,6 +148,19 @@ p{ margin: 0 0 1em; }
 .hero-photo{ width:100%; max-height:420px; object-fit:cover; border:1px solid var(--line); margin-top:32px; }
 
 /* ============================================================
+   Time-savings feature list
+   ============================================================ */
+.time-save{ margin-top:26px; }
+.time-save .ts-label{ font-family:var(--font-mono); font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:var(--slate); margin-bottom:10px; display:block; }
+.time-save-row{ display:grid; grid-template-columns:96px 1fr; gap:14px; padding:10px 0; border-top:1px solid var(--line); align-items:baseline; }
+.time-save-row:last-child{ border-bottom:1px solid var(--line); }
+.time-save-row .ts-time{ font-family:var(--font-mono); font-size:12px; color:var(--copper); font-weight:600; white-space:nowrap; }
+.time-save-row .ts-desc{ font-size:14px; color:var(--ink-soft); line-height:1.4; }
+
+/* homepage product card "built for" line */
+.pc-for{ font-family:var(--font-mono); font-size:11px; letter-spacing:.05em; text-transform:uppercase; color:var(--slate); margin:2px 0 10px; }
+
+/* ============================================================
    Brief case study card (problem / approach / outcome + quote)
    ============================================================ */
 .mini-case{ border:1px solid var(--line); background: var(--paper); padding: 26px 28px; margin-top:28px; }
