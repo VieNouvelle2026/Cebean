@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>https://cebean.com/software.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://cebean.com/videos/exportready-poster.png</video:thumbnail_loc>
+      <video:title>ExportReady Demo — Export Readiness Assessment Walkthrough</video:title>
+      <video:description>A walkthrough of the ExportReady assessment: 9-pillar readiness scoring, market matching, CUSMA impact analysis, and roadmap generation for Canadian SMBs diversifying beyond one export market.</video:description>
+      <video:content_loc>https://cebean.com/videos/exportready-demo.mp4</video:content_loc>
+      <video:publication_date>2026-07-01T00:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://cebean.com/videos/contractor-audit-shield-poster.png</video:thumbnail_loc>
+      <video:title>Contractor Audit Shield Demo — Automated Compliance Walkthrough</video:title>
+      <video:description>A walkthrough of Contractor Audit Shield (1099watch.com): automated 1099 contractor compliance tracking, risk flagging, and audit-ready reporting for US-based businesses.</video:description>
+      <video:content_loc>https://cebean.com/videos/contractor-audit-shield-demo.mp4</video:content_loc>
+      <video:publication_date>2026-07-01T00:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://cebean.com/videos/invorapro-poster.png</video:thumbnail_loc>
+      <video:title>InvoraPro Demo — Quoting, Invoicing &amp; Admin Automation Walkthrough</video:title>
+      <video:description>A walkthrough of InvoraPro: voice-to-text quoting, 2-click invoicing, snap-a-receipt expense logging, and AI contract review for contractors and trades.</video:description>
+      <video:content_loc>https://cebean.com/videos/invorapro-demo.mp4</video:content_loc>
+      <video:publication_date>2026-07-01T00:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+</urlset>
