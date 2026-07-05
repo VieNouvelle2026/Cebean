@@ -291,8 +291,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
    ============================================================ */
 header.site{
   position: sticky; top:0; z-index: 50;
-  background: rgba(244,242,236,.93);
-  backdrop-filter: blur(6px);
+  background: rgba(244,242,236,.98);
   border-bottom: 1px solid var(--line);
 }
 .nav-row{
@@ -583,6 +582,22 @@ footer.site{ border-top: 1px solid var(--line); padding: 56px 0 40px; margin-top
 
 .check-field{ display:flex; align-items:center; gap:10px; font-size:14.5px; color: var(--ink-soft); }
 .check-field input{ width:auto; }
+
+/* ============================================================
+   Fit self-check (for you / not for you)
+   ============================================================ */
+.fit-check{ display:grid; grid-template-columns: 1fr 1fr; gap:1px; background:var(--line); border:1px solid var(--line); }
+.fit-col{ background:var(--paper); padding:30px 32px; }
+.fit-col.no{ background:var(--paper-alt); }
+.fit-col h3{ font-size:16px; margin:0 0 18px; font-family:var(--font-mono); text-transform:uppercase; letter-spacing:.04em; }
+.fit-col.yes h3{ color:var(--pine); }
+.fit-col.no h3{ color:var(--slate); }
+.fit-row{ display:flex; gap:12px; align-items:flex-start; margin-bottom:14px; font-size:14.5px; color:var(--ink-soft); }
+.fit-row:last-child{ margin-bottom:0; }
+.fit-mark{ flex-shrink:0; font-family:var(--font-mono); font-size:13px; width:18px; }
+.fit-col.yes .fit-mark{ color:var(--pine); }
+.fit-col.no .fit-mark{ color:var(--copper); }
+@media (max-width: 760px){ .fit-check{ grid-template-columns: 1fr; } }
 
 /* ============================================================
    Blog
