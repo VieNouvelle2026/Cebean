@@ -127,6 +127,41 @@ p{ margin: 0 0 1em; }
 .feature-card:hover .fc-visual svg{ transform: scale(1.08) translateY(-2px); animation-play-state: paused; }
 .feature-card:hover .fc-arrow{ transform: translateX(2px); }
 
+/* icon storytelling: each icon's motion mirrors what its card is claiming */
+.fc-visual svg .ico-draw{ stroke-dasharray:70; animation: icoDraw 2.8s ease-in-out infinite; }
+@keyframes icoDraw{
+  0%{ stroke-dashoffset:70; } 45%{ stroke-dashoffset:0; } 80%{ stroke-dashoffset:0; } 100%{ stroke-dashoffset:70; }
+}
+.fc-visual svg .ico-draw-head{ opacity:0; animation: icoHeadIn 2.8s ease-in-out infinite; }
+@keyframes icoHeadIn{ 0%,100%{ opacity:0; } 45%,80%{ opacity:1; } }
+
+.fc-visual svg .ico-flow{ animation: icoFlow 1s linear infinite; }
+@keyframes icoFlow{ to{ stroke-dashoffset:-15; } }
+
+.fc-visual svg .ico-pulse-check{
+  transform-box: fill-box; transform-origin:center;
+  animation: icoPulse 2.2s ease-in-out infinite;
+}
+@keyframes icoPulse{ 0%,100%{ transform:scale(1); } 50%{ transform:scale(1.2); } }
+
+.fc-visual svg .ico-dot{ animation: icoDotFill 1.8s ease-in-out infinite; }
+.fc-visual svg .ico-dot1{ animation-delay:0s; }
+.fc-visual svg .ico-dot2{ animation-delay:.2s; }
+.fc-visual svg .ico-dot3{ animation-delay:.4s; }
+@keyframes icoDotFill{ 0%,60%,100%{ fill:#F5F3ED; } 30%{ fill:#B8763B; } }
+
+.fc-visual svg .ico-flag{
+  transform-box: view-box; transform-origin:52px 46px;
+  animation: icoFlagArrive 1.8s ease-in-out infinite; animation-delay:.6s;
+}
+@keyframes icoFlagArrive{ 0%,55%,100%{ transform:scale(1); } 75%{ transform:scale(1.16); } }
+
+.fc-visual svg .ico-spin{
+  transform-box: view-box; transform-origin:52px 14px;
+  animation: icoSpin 3.2s linear infinite;
+}
+@keyframes icoSpin{ to{ transform:rotate(360deg); } }
+
 /* ============================================================
    Per-product placeholder brand colors — swap for real hex codes
    ============================================================ */
