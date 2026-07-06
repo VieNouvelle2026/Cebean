@@ -97,6 +97,11 @@
         <text x="8" y="80">WE ASSESS</text>
         <text x="520" y="14">WE PLAN</text>
         <text x="1040" y="14">WE BUILD</text>
+        <circle r="4.5" fill="var(--copper)" class="pulse">
+          <animateMotion dur="3.6s" begin="1.5s" repeatCount="indefinite"
+            path="M20,60 L 280,60 L 280,25 L 590,25 L 590,60 L 900,60 L 900,25 L 1160,25"/>
+          <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.92;1" dur="3.6s" begin="1.5s" repeatCount="indefinite"/>
+        </circle>
       </svg>
     </div>
   </section>
@@ -107,8 +112,8 @@
         <h2>Grow &amp; Protect Your Business</h2>
         <p>Four ways the same twenty years of pattern-spotting shows up for you.</p>
       </div>
-      <div class="feature-grid reveal">
-        <a href="consulting.html#trade" class="feature-card theme-pine">
+      <div class="feature-grid">
+        <a href="consulting.html#trade" class="feature-card theme-pine reveal">
           <div class="fc-visual">
             <svg viewBox="0 0 64 64" fill="none">
               <path d="M4,46 L10,41 L14,48 L19,40 L23,46 L27,41" stroke="#5C6A78" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -123,7 +128,7 @@
           <p>Assess your exposure, build the plan, execute in 12–24 months.</p>
           <span class="fc-arrow">→</span>
         </a>
-        <a href="consulting.html#ai" class="feature-card theme-blue">
+        <a href="consulting.html#ai" class="feature-card theme-blue reveal">
           <div class="fc-visual">
             <svg viewBox="0 0 64 64" fill="none">
               <rect x="6" y="24" width="16" height="16" rx="2" stroke="#F5F3ED" stroke-width="2"/>
@@ -141,7 +146,7 @@
           <p>The right tools, chosen and rolled out so your team actually uses them.</p>
           <span class="fc-arrow">→</span>
         </a>
-        <a href="consulting.html#delivery" class="feature-card theme-pine">
+        <a href="consulting.html#delivery" class="feature-card theme-pine reveal">
           <div class="fc-visual">
             <svg viewBox="0 0 64 64" fill="none">
               <path d="M8,44 L44,44" stroke="#F5F3ED" stroke-width="2" stroke-dasharray="1 5" stroke-linecap="round"/>
@@ -156,7 +161,7 @@
           <p>PMI-aligned delivery that keeps moving after the deck is closed.</p>
           <span class="fc-arrow">→</span>
         </a>
-        <a href="software.html" class="feature-card theme-copper">
+        <a href="software.html" class="feature-card theme-copper reveal">
           <div class="fc-visual">
             <svg viewBox="0 0 64 64" fill="none">
               <path d="M32 10 L50 18 V32 C50 44 42 51 32 54 C22 51 14 44 14 32 V18 Z" stroke="#F5F3ED" stroke-width="2.2" stroke-linejoin="round"/>
