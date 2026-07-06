@@ -457,8 +457,37 @@ nav.links a:hover::after, nav.links a.active::after{ right:0; }
   font-family: var(--font-mono); font-size: 11px; fill: var(--ink-soft); letter-spacing:.04em;
 }
 @keyframes draw{ to{ stroke-dashoffset: 0; } }
-.divider-trace{ margin: 0 auto; max-width: var(--maxw); padding: 0 32px; }
+.divider-trace{ margin: 0 auto; max-width: var(--maxw); padding: 0 32px; position:relative; }
 .trace .pulse{ filter: drop-shadow(0 0 4px rgba(184,118,59,.85)); }
+
+/* HTML label overlay — kept out of the SVG so text size never shrinks with the graphic */
+.trace-labels{ position:absolute; inset:0; pointer-events:none; }
+.trace-labels .tl{
+  position:absolute; font-family:var(--font-mono); font-size:11px; letter-spacing:.04em;
+  color:var(--ink-soft); white-space:nowrap;
+}
+.trace-labels .tl-start{ left:1.7%; top:80%; }
+.trace-labels .tl-mid{ left:50%; top:5%; transform:translateX(-50%); }
+.trace-labels .tl-end{ left:98.3%; top:5%; transform:translateX(-100%); }
+@media (max-width: 480px){
+  .trace-labels .tl{ font-size:9.5px; letter-spacing:.02em; }
+}
+
+/* Below ~700px the wide horizontal trace becomes too short vertically for legible
+   text at any font size, so swap to a simple vertical stepper instead. */
+.trace-mobile{ display:none; }
+@media (max-width: 700px){
+  .divider-trace .trace, .divider-trace .trace-labels{ display:none; }
+  .trace-mobile{ display:flex; flex-direction:column; padding:6px 0; }
+  .tm-step{ display:flex; align-items:center; gap:14px; position:relative; padding:12px 0; }
+  .tm-step:not(:last-child)::after{
+    content:""; position:absolute; left:5.5px; top:30px; bottom:-12px; width:1px; background:var(--line);
+  }
+  .tm-dot{ width:12px; height:12px; border-radius:50%; background:var(--paper); border:1.5px solid var(--ink); flex-shrink:0; z-index:1; }
+  .tm-dot.tm-pine{ background:var(--pine); border-color:var(--pine); }
+  .tm-dot.tm-copper{ background:var(--copper); border-color:var(--copper); }
+  .tm-label{ font-family:var(--font-mono); font-size:13px; letter-spacing:.05em; color:var(--ink-soft); text-transform:uppercase; }
+}
 
 /* ============================================================
    Hero
