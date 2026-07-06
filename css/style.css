@@ -221,7 +221,21 @@ p{ margin: 0 0 1em; }
 .btn.ghost:hover{ background:var(--paper-alt); border-color:var(--slate); color:var(--ink); }
 
 /* homepage product card "built for" line */
-.pc-for{ font-family:var(--font-mono); font-size:11px; letter-spacing:.05em; text-transform:uppercase; color:var(--slate); margin:2px 0 10px; }
+.pc-for{
+  display:flex; gap:10px; align-items:flex-start; font-family:var(--font-body); font-size:13.5px;
+  color:var(--ink); font-weight:600; margin:6px 0 14px; padding-left:12px;
+  border-left:3px solid var(--line); line-height:1.4;
+}
+.pc-for b{
+  font-family:var(--font-mono); font-size:10.5px; text-transform:uppercase; letter-spacing:.05em;
+  color:var(--slate); display:block; margin-bottom:2px; font-weight:700;
+}
+.product-card:nth-of-type(1) .pc-for{ border-left-color: var(--brand-exportready); }
+.product-card:nth-of-type(1) .pc-for b{ color: var(--brand-exportready); }
+.product-card:nth-of-type(2) .pc-for{ border-left-color: var(--brand-1099watch); }
+.product-card:nth-of-type(2) .pc-for b{ color: var(--brand-1099watch); }
+.product-card:nth-of-type(3) .pc-for{ border-left-color: var(--brand-invorapro); }
+.product-card:nth-of-type(3) .pc-for b{ color: var(--brand-invorapro); }
 
 /* ============================================================
    Brief case study card — tabbed (problem/approach/outcome), quote pinned
