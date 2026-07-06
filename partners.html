@@ -93,10 +93,22 @@
         <circle cx="20" cy="60" r="5"></circle>
         <circle cx="590" cy="25" r="5" class="wp-pine"></circle>
         <circle cx="1160" cy="25" r="5" class="wp-copper"></circle>
-        <text x="8" y="80">YOU RUN THE SALE</text>
-        <text x="520" y="14">WE BRING THE PRODUCT</text>
-        <text x="1010" y="14">WE SPLIT THE REVENUE</text>
+        <circle r="4.5" fill="var(--copper)" class="pulse">
+          <animateMotion dur="3.6s" begin="1.5s" repeatCount="indefinite"
+            path="M20,60 L 280,60 L 280,25 L 590,25 L 590,60 L 900,60 L 900,25 L 1160,25"/>
+          <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.08;0.92;1" dur="3.6s" begin="1.5s" repeatCount="indefinite"/>
+        </circle>
       </svg>
+      <div class="trace-labels">
+        <span class="tl tl-start">YOU RUN THE SALE</span>
+        <span class="tl tl-mid">WE BRING THE PRODUCT</span>
+        <span class="tl tl-end">WE SPLIT THE REVENUE</span>
+      </div>
+      <div class="trace-mobile">
+        <div class="tm-step"><span class="tm-dot"></span><span class="tm-label">You run the sale</span></div>
+        <div class="tm-step"><span class="tm-dot tm-pine"></span><span class="tm-label">We bring the product</span></div>
+        <div class="tm-step"><span class="tm-dot tm-copper"></span><span class="tm-label">We split the revenue</span></div>
+      </div>
     </div>
   </section>
 
@@ -106,8 +118,8 @@
         <p class="eyebrow">Why partner with us</p>
       </div>
       <div>
-        <p class="pull">You don't build a product from zero. You don't carry the engineering risk. You bring the relationships and market knowledge, we bring three tools people already pay for.</p>
-        <p style="margin-top:22px;">Building software from scratch to enter a new region is slow and expensive — the product has to be built, tested, and proven before you can sell a single seat. ExportReady, 1099watch.com, and InvoraPro have already cleared that bar. What's missing in most new markets isn't a better product; it's someone on the ground who understands local businesses well enough to get them to say yes.</p>
+        <p class="pull">You don't build a product from zero. You don't carry the engineering risk. You bring the relationships and market knowledge — we bring three working products, each already built, tested, and live in market.</p>
+        <p style="margin-top:22px;">Building software from scratch to enter a new region is slow and expensive — the product has to be built, tested, and proven before you can sell a single seat. ExportReady, 1099watch.com, and InvoraPro have already cleared that bar: real, live products you can demo on day one, not a concept on a slide. What's missing in most new markets isn't a better product; it's someone on the ground who understands local businesses well enough to get them to say yes.</p>
         <p>That's the gap a Cebean partner fills — and it's why the model is profit-sharing, not a base salary or a flat one-time referral fee. Your income grows with the accounts you bring in and keep, not just the ones you close once.</p>
       </div>
     </div>
