@@ -129,6 +129,59 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 1500);
   });
 
+  // collapsible "read more" blocks
+  document.querySelectorAll('.expand-toggle').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var block = btn.closest('.expand-block');
+      if (!block) return;
+      var isOpen = block.classList.toggle('open');
+      btn.setAttribute('aria-expanded', isOpen);
+    });
+  });
+
+  // principle carousel: color-coded filter pills + arrows + gentle autoplay
+  document.querySelectorAll('.pc-wrap').forEach(function (wrap) {
+    var track = wrap.querySelector('.pc-track');
+    if (!track) return;
+    var slides = wrap.querySelectorAll('.pc-slide');
+    var pills = wrap.querySelectorAll('.pc-pill');
+    var prev = wrap.querySelector('.pc-prev');
+    var next = wrap.querySelector('.pc-next');
+
+    function amount() {
+      var slide = track.querySelector('.pc-slide');
+      return slide ? slide.getBoundingClientRect().width + 16 : 280;
+    }
+
+    pills.forEach(function (pill) {
+      pill.addEventListener('click', function () {
+        pills.forEach(function (p) { p.classList.remove('active'); });
+        pill.classList.add('active');
+        var cat = pill.getAttribute('data-cat');
+        slides.forEach(function (s) {
+          var match = cat === 'all' || s.getAttribute('data-cat') === cat;
+          s.classList.toggle('dim', !match);
+        });
+        if (cat !== 'all') {
+          var first = wrap.querySelector('.pc-slide[data-cat="' + cat + '"]');
+          if (first) first.scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
+        }
+      });
+    });
+
+    if (prev) prev.addEventListener('click', function () { track.scrollBy({ left: -amount(), behavior: 'smooth' }); });
+    if (next) next.addEventListener('click', function () { track.scrollBy({ left: amount(), behavior: 'smooth' }); });
+
+    // gentle autoplay, pauses as soon as the visitor interacts
+    var autoplay = setInterval(function () {
+      var atEnd = track.scrollLeft + track.clientWidth >= track.scrollWidth - 4;
+      track.scrollBy({ left: atEnd ? -track.scrollLeft : amount(), behavior: 'smooth' });
+    }, 4200);
+    ['mouseenter', 'touchstart', 'wheel'].forEach(function (evt) {
+      wrap.addEventListener(evt, function () { clearInterval(autoplay); }, { passive: true });
+    });
+  });
+
   // current year in footer
   document.querySelectorAll('.year').forEach(function (el) {
     el.textContent = new Date().getFullYear();
