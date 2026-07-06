@@ -81,45 +81,76 @@
         <h2>How we build software</h2>
         <p>Twenty years in enterprise software taught us what works — and what it gets wrong for a business your size.</p>
       </div>
-      <div class="principle-grid reveal">
-        <div class="principle-card">
-          <div class="p-icon" style="background:rgba(62,107,94,.12);"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18M5 8h14" stroke="var(--pine)" stroke-width="2" stroke-linecap="round"/></svg></div>
-          <h4>A free tier that's actually free</h4>
-          <p>Every product ships with a real, comprehensive trial — not a crippled demo built to frustrate you into paying.</p>
+      <div class="pc-wrap reveal">
+        <div class="pc-filter">
+          <button class="pc-pill active" data-cat="all">All 7 rules</button>
+          <button class="pc-pill" data-cat="time">Respects your time</button>
+          <button class="pc-pill" data-cat="auto">Automation</button>
+          <button class="pc-pill" data-cat="support">Never leaves you stuck</button>
         </div>
-        <div class="principle-card">
-          <div class="p-icon" style="background:rgba(62,92,107,.12);"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" fill="var(--slate-blue)"/><circle cx="12" cy="12" r="9" stroke="var(--slate-blue)" stroke-width="2"/></svg></div>
-          <h4>One click, not ten</h4>
-          <p>If a task takes more than a click or two, we treat that as a bug, not a feature.</p>
+        <div class="pc-track">
+          <div class="pc-slide" data-cat="time">
+            <div class="principle-card">
+              <div class="p-icon" style="background:rgba(62,107,94,.12);"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v18M5 8h14" stroke="var(--pine)" stroke-width="2" stroke-linecap="round"/></svg></div>
+              <span class="pc-tag">Respects your time</span>
+              <h4>A free tier that's actually free</h4>
+              <p>Every product ships with a real, comprehensive trial — not a crippled demo built to frustrate you into paying.</p>
+            </div>
+          </div>
+          <div class="pc-slide" data-cat="auto">
+            <div class="principle-card">
+              <div class="p-icon" style="background:rgba(62,92,107,.12);"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" fill="var(--slate-blue)"/><circle cx="12" cy="12" r="9" stroke="var(--slate-blue)" stroke-width="2"/></svg></div>
+              <span class="pc-tag">Automation</span>
+              <h4>One click, not ten</h4>
+              <p>If a task takes more than a click or two, we treat that as a bug, not a feature.</p>
+            </div>
+          </div>
+          <div class="pc-slide" data-cat="support">
+            <div class="principle-card">
+              <div class="p-icon" style="background:rgba(184,118,59,.12);"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l1.5 6L20 12l-6.5 3L12 21l-1.5-6L4 12l6.5-3z" fill="var(--copper)"/></svg></div>
+              <span class="pc-tag">Never leaves you stuck</span>
+              <h4>Built to flag outliers</h4>
+              <p>The software tells you what needs your attention — not make you hunt for it across a dashboard.</p>
+            </div>
+          </div>
+          <div class="pc-slide" data-cat="auto">
+            <div class="principle-card">
+              <div class="p-icon" style="background:rgba(62,92,107,.12);"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="3" stroke="var(--slate-blue)" stroke-width="2"/><path d="M8 12h8M12 8v8" stroke="var(--slate-blue)" stroke-width="2" stroke-linecap="round"/></svg></div>
+              <span class="pc-tag">Automation</span>
+              <h4>Automated wherever AI can do it well</h4>
+              <p>If a machine can do the repetitive part reliably, it should — so your time goes to real decisions.</p>
+            </div>
+          </div>
+          <div class="pc-slide" data-cat="time">
+            <div class="principle-card">
+              <div class="p-icon" style="background:rgba(62,107,94,.12);"><svg viewBox="0 0 24 24" fill="none"><path d="M5 6h14M5 12h9M5 18h6" stroke="var(--pine)" stroke-width="2" stroke-linecap="round"/></svg></div>
+              <span class="pc-tag">Respects your time</span>
+              <h4>Plain language, plain interface</h4>
+              <p>No enterprise jargon, no settings menus five layers deep. If it needs a manual, we've failed.</p>
+            </div>
+          </div>
+          <div class="pc-slide" data-cat="support">
+            <div class="principle-card">
+              <div class="p-icon" style="background:rgba(184,118,59,.12);"><svg viewBox="0 0 24 24" fill="none"><path d="M4 18l0-7a8 8 0 1116 0v7" stroke="var(--copper)" stroke-width="2"/><rect x="2" y="16" width="4" height="5" rx="1" stroke="var(--copper)" stroke-width="2"/><rect x="18" y="16" width="4" height="5" rx="1" stroke="var(--copper)" stroke-width="2"/></svg></div>
+              <span class="pc-tag">Never leaves you stuck</span>
+              <h4>Help that's built in</h4>
+              <p>An in-app assistant that actually answers your question — not a support ticket queue.</p>
+            </div>
+          </div>
+          <div class="pc-slide" data-cat="time">
+            <div class="principle-card">
+              <div class="p-icon" style="background:rgba(62,107,94,.12);"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="var(--pine)" stroke-width="2"/><path d="M12 7v5l3.5 2" stroke="var(--pine)" stroke-width="2" stroke-linecap="round"/></svg></div>
+              <span class="pc-tag">Respects your time</span>
+              <h4>Time is the scarcest resource</h4>
+              <p>Every design decision gets measured against one question: does this give you your time back?</p>
+            </div>
+          </div>
         </div>
-        <div class="principle-card">
-          <div class="p-icon" style="background:rgba(184,118,59,.12);"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3l1.5 6L20 12l-6.5 3L12 21l-1.5-6L4 12l6.5-3z" fill="var(--copper)"/></svg></div>
-          <h4>Built to flag outliers</h4>
-          <p>The software tells you what needs your attention — not make you hunt for it across a dashboard.</p>
+        <div class="pc-controls">
+          <button class="tc-btn pc-prev" aria-label="Previous">&larr;</button>
+          <button class="tc-btn pc-next" aria-label="Next">&rarr;</button>
         </div>
-        <div class="principle-card">
-          <div class="p-icon" style="background:rgba(62,92,107,.12);"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="4" width="16" height="16" rx="3" stroke="var(--slate-blue)" stroke-width="2"/><path d="M8 12h8M12 8v8" stroke="var(--slate-blue)" stroke-width="2" stroke-linecap="round"/></svg></div>
-          <h4>Automated wherever AI can do it well</h4>
-          <p>If a machine can do the repetitive part reliably, it should — so your time goes to real decisions.</p>
-        </div>
-        <div class="principle-card">
-          <div class="p-icon" style="background:rgba(62,107,94,.12);"><svg viewBox="0 0 24 24" fill="none"><path d="M5 6h14M5 12h9M5 18h6" stroke="var(--pine)" stroke-width="2" stroke-linecap="round"/></svg></div>
-          <h4>Plain language, plain interface</h4>
-          <p>No enterprise jargon, no settings menus five layers deep. If it needs a manual, we've failed.</p>
-        </div>
-        <div class="principle-card">
-          <div class="p-icon" style="background:rgba(184,118,59,.12);"><svg viewBox="0 0 24 24" fill="none"><path d="M4 18l0-7a8 8 0 1116 0v7" stroke="var(--copper)" stroke-width="2"/><rect x="2" y="16" width="4" height="5" rx="1" stroke="var(--copper)" stroke-width="2"/><rect x="18" y="16" width="4" height="5" rx="1" stroke="var(--copper)" stroke-width="2"/></svg></div>
-          <h4>Help that's built in</h4>
-          <p>An in-app assistant that actually answers your question — not a support ticket queue.</p>
-        </div>
-        <div class="principle-card">
-          <div class="p-icon" style="background:rgba(62,107,94,.12);"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="var(--pine)" stroke-width="2"/><path d="M12 7v5l3.5 2" stroke="var(--pine)" stroke-width="2" stroke-linecap="round"/></svg></div>
-          <h4>Time is the scarcest resource</h4>
-          <p>Every design decision gets measured against one question: does this give you your time back?</p>
-        </div>
-        <div class="principle-card" style="justify-content:center;">
-          <p style="font-size:14px; color:var(--ink-soft); margin:0;">Seven rules, three products, one standard. See them in practice below.</p>
-        </div>
+        <p class="pc-closing">Seven rules, three products, one standard — filter by what matters most to you, or scroll through all of them. See them in practice below.</p>
       </div>
     </div>
   </section>
