@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Governance vs. AI Policy vs. Risk Assessment: What's the Difference? - Cebean Inc.</title>
+<meta name="description" content="An AI policy, a risk assessment, and AI governance solve different problems. Here's the actual difference, why having one doesn't mean you have the others, and which to build first.">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Cebean Inc.">
+<meta property="og:url" content="https://cebean.com/ai-governance-vs-ai-policy-vs-risk-assessment.html">
+<meta property="og:title" content="AI Governance vs. AI Policy vs. Risk Assessment: What's the Difference?">
+<meta property="og:description" content="An AI policy, a risk assessment, and AI governance solve different problems. Here's the actual difference, and which to build first.">
+<meta property="og:image" content="https://cebean.com/images/og/cebean-og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI Governance vs. AI Policy vs. Risk Assessment: What's the Difference?">
+<meta name="twitter:description" content="An AI policy, a risk assessment, and AI governance solve different problems. Here's the actual difference, and which to build first.">
+<meta name="twitter:image" content="https://cebean.com/images/og/cebean-og.png">
+<link rel="alternate" hreflang="en" href="https://cebean.com/ai-governance-vs-ai-policy-vs-risk-assessment.html">
+<link rel="alternate" hreflang="fr-ca" href="https://cebean.com/fr/ai-governance-vs-ai-policy-vs-risk-assessment.html">
+<link rel="alternate" hreflang="x-default" href="https://cebean.com/ai-governance-vs-ai-policy-vs-risk-assessment.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+
+<header class="site">
+  <div class="nav-row">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 512 512" width="30" height="30" aria-hidden="true">
+        <rect width="512" height="512" rx="108" fill="#171B22"/>
+        <path d="M 342.03 137.9 A 150 150 0 1 0 342.03 374.1" fill="none" stroke="#F5F3ED" stroke-width="54" stroke-linecap="round"/>
+        <circle cx="342.03" cy="137.9" r="40" fill="#B8763B"/>
+      </svg>
+      <span class="brand-word">Cebean<span class="brand-suffix">Inc.</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+    <nav class="links">
+      <a href="index.html">Home</a>
+
+      <div class="nav-item">
+        <button class="nav-trigger" aria-expanded="false">Software <svg viewBox="0 0 12 8" fill="none"><path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></button>
+        <div class="nav-dropdown">
+          <a href="https://exportready.cebean.com" target="_blank" rel="noopener"><b>ExportReady</b><span>Export readiness &amp; trade diversification</span></a>
+          <a href="https://1099watch.com" target="_blank" rel="noopener"><b>1099watch.com</b><span>Contractor Audit Shield</span></a>
+          <a href="https://www.invorapro.com" target="_blank" rel="noopener"><b>InvoraPro</b><span>Quote, Invoicing, Cash Job software for Contractors</span></a>
+          <a href="software.html" class="see-all"><b>See all software →</b></a>
+        </div>
+      </div>
+
+      <div class="nav-item">
+        <button class="nav-trigger" aria-expanded="false">Consulting <svg viewBox="0 0 12 8" fill="none"><path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></button>
+        <div class="nav-dropdown">
+          <a href="how-we-work.html"><b>How We Work</b><span>Our process, start to results</span></a>
+          <a href="ai-governance-advisory.html"><b>AI Governance Advisory</b><span>Built on ISO/IEC 42001</span></a>
+          <a href="consulting.html#trade"><b>Trade Diversification</b><span>Export readiness &amp; market expansion</span></a>
+          <a href="consulting.html#ai"><b>AI Strategy</b><span>Adoption, governance &amp; training</span></a>
+          <a href="software.html#rapid-dev"><b>AI Implementation</b><span>Agents and automation, built and shipped</span></a>
+          <a href="consulting.html#delivery"><b>Business Analysis &amp; Project Management</b><span>Project &amp; change management</span></a>
+          <a href="consulting.html" class="see-all"><b>See all consulting →</b></a>
+        </div>
+      </div>
+
+      <div class="nav-item">
+        <button class="nav-trigger" aria-expanded="false">Resources <svg viewBox="0 0 12 8" fill="none"><path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></button>
+        <div class="nav-dropdown">
+          <a href="blog.html"><b>Blog</b><span>Trade, AI &amp; growth insights</span></a>
+          <a href="about.html"><b>About</b><span>Our story &amp; approach</span></a>
+          <a href="partners.html"><b>Partners</b><span>Profit-sharing partner program</span></a>
+        </div>
+      </div>
+
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="nav-cta">Book a consultation</a>
+      <a href="fr/ai-governance-vs-ai-policy-vs-risk-assessment.html" class="lang-switch">FR</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container article-wrap">
+      <a href="blog.html" class="back-link">&larr; Back to all posts</a>
+      <p class="eyebrow" style="margin-top:18px;">AI GOVERNANCE</p>
+      <h1>AI Governance vs. AI Policy vs. Risk Assessment: What's the Difference?</h1>
+      <p class="article-meta">Written by Pascale D&eacute;cosse &middot; Sep 1, 2026</p>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="container article-wrap">
+
+      <p>"Can't our lawyer just write an AI policy?" is one of the most common responses to a governance conversation, closely followed by "we already did a risk assessment." Both are reasonable questions, and both point to a real misunderstanding: a policy, a risk assessment, and governance are three different things that solve three different problems. Having one doesn't mean you have the others, and knowing the difference is what determines whether your AI use actually holds up when someone asks about it.</p>
+
+      <h2>What each one actually is</h2>
+      <ul style="padding-left:18px; color:var(--ink-soft);">
+        <li><b>An AI policy</b> is a document. It states rules: what employees can and can't do with AI tools, what data can't be shared, what needs approval. It's necessary, but it's one artifact, not a system.</li>
+        <li><b>A risk assessment</b> is a snapshot. It evaluates the risk of a specific AI system or use case at a specific point in time, then it's done, until someone remembers to do another one.</li>
+        <li><b>AI governance</b> is the ongoing system that connects both of those to actual decision making: who's accountable, what gets reviewed and when, what evidence exists, and how the organization responds when something changes.</li>
+      </ul>
+      <p>A useful way to think about it: a policy tells people what the rules are. A risk assessment checks whether a specific system is safe right now. Governance is what makes sure the rules are actually followed, the assessments actually happen on a schedule, and someone is actually accountable when they don't.</p>
+
+      <h2>Why a policy alone doesn't work</h2>
+      <p>A policy without an enforcement mechanism at the individual level has no teeth, and the data backs this up starkly. According to the 2025 State of Shadow AI Report, 81% of the general workforce and 88% of security professionals, the people responsible for protecting company data, use AI tools that were never approved by their organization. Most of those employees aren't ignoring a policy out of malice. Often the policy exists, nobody enforces it, and nobody owns keeping it current as new AI tools appear. A document sitting in a shared drive doesn't change behavior on its own.</p>
+
+      <h2>Why a risk assessment alone doesn't work</h2>
+      <p>A risk assessment answers a question about a moment in time. It doesn't answer what happens six months later when the AI vendor updates the model, when a new team starts using the tool for something it wasn't assessed for, or when a new regulation changes what "acceptable risk" even means. Without governance wrapped around it, a risk assessment becomes a one time exercise that quietly stops reflecting reality the day after it's finished.</p>
+
+      <h2>How governance connects the two</h2>
+      <p>Governance isn't a fourth document sitting next to the other two. It's the structure that makes the policy enforceable and the risk assessment current: named ownership, a review cadence, decision rights for who approves a new AI tool, technical controls where they're needed, and documentation that shows the work actually happened, not just that it was supposed to. A useful framework, like ISO/IEC 42001, gives that structure a recognized shape instead of leaving it improvised.</p>
+
+      <h2>A quick comparison</h2>
+      <ul style="padding-left:18px; color:var(--ink-soft);">
+        <li><b>Scope:</b> a policy covers rules, a risk assessment covers one system, governance covers the whole organization's ongoing AI use.</li>
+        <li><b>Timing:</b> a policy is written once and updated occasionally, a risk assessment is a point in time snapshot, governance is continuous.</li>
+        <li><b>Output:</b> a policy produces a document, a risk assessment produces a report, governance produces an accountable, auditable system.</li>
+        <li><b>Ownership:</b> a policy is often written by legal, a risk assessment by IT or security, governance needs a named owner connecting all of it.</li>
+      </ul>
+
+      <h2>Which one do you actually need first</h2>
+      <ul style="padding-left:18px; color:var(--ink-soft);">
+        <li><b>You have neither a policy nor governance yet</b> → start with a short, specific acceptable use policy employees will actually read, then build governance around it.</li>
+        <li><b>You have a policy but no one enforces or updates it</b> → you likely need governance more than a new policy. The document isn't the gap.</li>
+        <li><b>You've done a risk assessment on one AI system</b> → that's a good start, but it doesn't cover the AI tools nobody formally assessed, including features already built into other software.</li>
+        <li><b>You're being asked by a client, insurer, or RFP to demonstrate AI governance</b> → this is specifically a governance question, not something a policy document alone answers.</li>
+      </ul>
+
+      <h2>Where we fit into this</h2>
+      <p>This is exactly the distinction our <a href="ai-governance-advisory.html">AI Governance Advisory</a> service is built around: not another document, a working system connecting the people, decisions, and evidence behind how your business actually uses AI, built on ISO/IEC 42001 and scoped to what you need.</p>
+
+      <div class="article-cta">
+        <p>Not sure which of these you actually have in place?</p>
+        <a href="ai-governance-advisory.html" class="btn" style="padding:10px 20px; font-size:13px;">See what's included <span class="arrow">&rarr;</span></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="brand" style="font-size:20px;">
+      <svg class="brand-mark" viewBox="0 0 512 512" width="26" height="26" aria-hidden="true">
+        <rect width="512" height="512" rx="108" fill="#171B22"/>
+        <path d="M 342.03 137.9 A 150 150 0 1 0 342.03 374.1" fill="none" stroke="#F5F3ED" stroke-width="54" stroke-linecap="round"/>
+        <circle cx="342.03" cy="137.9" r="40" fill="#B8763B"/>
+      </svg>
+      <span class="brand-word">Cebean<span class="brand-suffix">Inc.</span></span>
+    </a>
+        <p style="margin-top:14px; max-width:34ch; color:var(--slate); font-size:14.5px;">Bilingual (EN/FR) consulting and software for digital transformation, AI implementation, trade, and compliance, based in Toronto.</p>
+        <div class="bi-badge" style="margin-top:16px;"><b>EN</b> <a href="fr/ai-governance-vs-ai-policy-vs-risk-assessment.html">FR</a></div>
+      </div>
+      <div>
+        <h5>Site</h5>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="how-we-work.html">How We Work</a></li>
+          <li><a href="ai-governance-advisory.html">AI Governance Advisory</a></li>
+          <li><a href="consulting.html">Consulting</a></li>
+          <li><a href="software.html">Software</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="partners.html">Partners</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="https://www.linkedin.com/company/cebean-inc/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="contact.html">Book a call</a></li>
+          <li>Toronto, Ontario</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span class="year"></span> Cebean Inc. All rights reserved.</span>
+      <span>Software built for the world. Consulting rooted in Canada.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
