@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Conseils en gouvernance de l'IA, bâtis sur la norme ISO/IEC 42001 - Cebean Inc.</title>
+<meta name="description" content="Conseils en gouvernance de l'IA, bâtis sur la norme ISO/IEC 42001 — pour les entreprises qui ont besoin de mises en œuvre d'IA qu'elles peuvent assumer pleinement. Menés par une Lead Implementer certifiée.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cebean Inc.">
+<meta property="og:url" content="https://cebean.com/fr/ai-governance-advisory.html">
+<meta property="og:title" content="Conseils en gouvernance de l'IA, bâtis sur la norme ISO/IEC 42001 - Cebean Inc.">
+<meta property="og:description" content="Conseils en gouvernance de l'IA, bâtis sur la norme ISO/IEC 42001 — pour les entreprises qui ont besoin de mises en œuvre d'IA qu'elles peuvent assumer pleinement.">
+<meta property="og:image" content="https://cebean.com/images/og/cebean-og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="fr_CA">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Conseils en gouvernance de l'IA, bâtis sur la norme ISO/IEC 42001 - Cebean Inc.">
+<meta name="twitter:description" content="Conseils en gouvernance de l'IA, bâtis sur la norme ISO/IEC 42001 — pour les entreprises qui ont besoin de mises en œuvre d'IA qu'elles peuvent assumer pleinement.">
+<meta name="twitter:image" content="https://cebean.com/images/og/cebean-og.png">
+<link rel="alternate" hreflang="en" href="https://cebean.com/ai-governance-advisory.html">
+<link rel="alternate" hreflang="fr-ca" href="https://cebean.com/fr/ai-governance-advisory.html">
+<link rel="alternate" hreflang="x-default" href="https://cebean.com/ai-governance-advisory.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+
+<header class="site">
+  <div class="nav-row">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 512 512" width="30" height="30" aria-hidden="true">
+        <rect width="512" height="512" rx="108" fill="#171B22"/>
+        <path d="M 342.03 137.9 A 150 150 0 1 0 342.03 374.1" fill="none" stroke="#F5F3ED" stroke-width="54" stroke-linecap="round"/>
+        <circle cx="342.03" cy="137.9" r="40" fill="#B8763B"/>
+      </svg>
+      <span class="brand-word">Cebean<span class="brand-suffix">Inc.</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Basculer le menu" aria-expanded="false"><span></span></button>
+    <nav class="links">
+      <a href="index.html">Accueil</a>
+
+      <div class="nav-item">
+        <button class="nav-trigger" aria-expanded="false">Logiciels <svg viewBox="0 0 12 8" fill="none"><path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></button>
+        <div class="nav-dropdown">
+          <a href="https://exportready.cebean.com" target="_blank" rel="noopener"><b>ExportReady</b><span>Préparation à l'exportation et diversification commerciale</span></a>
+          <a href="https://1099watch.com" target="_blank" rel="noopener"><b>1099watch.com</b><span>Contractor Audit Shield</span></a>
+          <a href="https://www.invorapro.com" target="_blank" rel="noopener"><b>InvoraPro</b><span>Soumissions, facturation et gestion comptant pour entrepreneurs</span></a>
+          <a href="software.html" class="see-all"><b>Voir tous les logiciels →</b></a>
+        </div>
+      </div>
+
+      <div class="nav-item">
+        <button class="nav-trigger" aria-expanded="false">Consultation <svg viewBox="0 0 12 8" fill="none"><path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></button>
+        <div class="nav-dropdown">
+          <a href="how-we-work.html"><b>Notre façon de travailler</b><span>Notre processus, du début aux résultats</span></a>
+          <a href="ai-governance-advisory.html"><b>Conseils en gouvernance de l'IA</b><span>Bâtis sur la norme ISO/IEC 42001</span></a>
+          <a href="consulting.html#trade"><b>Diversification commerciale</b><span>Préparation à l'exportation et expansion de marché</span></a>
+          <a href="consulting.html#ai"><b>Stratégie IA</b><span>Adoption, gouvernance et formation</span></a>
+          <a href="software.html#rapid-dev"><b>Mise en œuvre de l'IA</b><span>Agents et automatisation, conçus et livrés</span></a>
+          <a href="consulting.html#delivery"><b>Analyse d'affaires et gestion de projet</b><span>Gestion de projet et du changement</span></a>
+          <a href="consulting.html" class="see-all"><b>Voir toute la consultation →</b></a>
+        </div>
+      </div>
+
+      <div class="nav-item">
+        <button class="nav-trigger" aria-expanded="false">Ressources <svg viewBox="0 0 12 8" fill="none"><path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></button>
+        <div class="nav-dropdown">
+          <a href="blog.html"><b>Blogue</b><span>Commerce, IA et perspectives de croissance</span></a>
+          <a href="about.html"><b>À propos</b><span>Notre histoire et notre approche</span></a>
+          <a href="partners.html"><b>Partenaires</b><span>Programme de partage des profits</span></a>
+        </div>
+      </div>
+
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="nav-cta">Réserver une consultation</a>
+      <a href="../ai-governance-advisory.html" class="lang-switch">EN</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="eyebrow copper">Service en vedette</p>
+      <h1>Conseils en gouvernance de l'IA.</h1>
+      <p class="lede">Conseils en gouvernance de l'IA, bâtis sur la norme ISO/IEC 42001 — pour les entreprises qui ont besoin de mises en œuvre d'IA qu'elles peuvent assumer pleinement. Menés par une Lead Implementer certifiée, pas un cadre générique.</p>
+      <div style="display:flex; gap:16px; flex-wrap:wrap; margin-top:28px;">
+        <a href="contact.html" class="btn">Parlez-nous de votre gouvernance de l'IA <span class="arrow">→</span></a>
+        <a href="#whats-included" class="btn outline">Voir ce qui est inclus</a>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding-top:0;">
+    <div class="container">
+      <div class="cred-highlight reveal">
+        <img src="../images/credentials/gaicc-iso-42001-badge.png" alt="Badge GAICC ISO/IEC 42001 Lead Implementer">
+        <div class="cred-text">
+          <span class="cred-label">Le titre derrière ce service</span>
+          <h4>Pascale est Lead Implementer certifiée ISO/IEC 42001</h4>
+          <p>La norme internationale pour les systèmes de gestion de l'IA, pas un cadre générique improvisé pour l'occasion.</p>
+        </div>
+        <a href="https://www.credly.com/badges/61c13d52-857f-49ee-91f7-62cab54d7a79/public_url" target="_blank" rel="noopener" class="cred-verify">Vérifier sur Credly →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>Ce que ça vous apporte réellement</h2>
+        <p>Trois raisons pour lesquelles la gouvernance est un investissement, pas un coût supplémentaire.</p>
+      </div>
+      <div class="svc-grid reveal">
+        <div class="svc-card">
+          <span class="code">AVANTAGE</span>
+          <h3>Décrochez les contrats qui l'exigent</h3>
+          <p>De plus en plus d'appels d'offres et de contrats d'entreprise exigent maintenant une gouvernance de l'IA documentée avant même de vous considérer. Un cadre certifié n'est pas seulement une protection interne, c'est un titre qui vous place sur la liste courte.</p>
+        </div>
+        <div class="svc-card">
+          <span class="code">CROISSANCE</span>
+          <h3>Prenez de l'expansion sans tout reconstruire plus tard</h3>
+          <p>Une gouvernance intégrée dès le départ évite d'avoir à interrompre, retravailler, ou démanteler vos systèmes d'IA quand la réglementation se resserre ou que vous entrez dans un nouveau marché réglementé. Vous croissez vers de nouveaux cas d'usage au lieu d'accumuler une dette que vous devrez rembourser éventuellement.</p>
+        </div>
+        <div class="svc-card">
+          <span class="code">IMPUTABILITÉ</span>
+          <h3>Des décisions d'IA que vous pouvez assumer pleinement</h3>
+          <p>La plupart des déploiements d'IA n'ont toujours pas de gouvernance mature en place, ce qui veut dire que la plupart des décisions d'IA reposent actuellement sur des suppositions. Pas les nôtres. Chaque recommandation est documentée et évaluée par rapport à la norme ISO/IEC 42001, pour que vous puissiez expliquer exactement comment et pourquoi elle a été prise — à votre conseil, à vos clients, ou à un régulateur.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="whats-included">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>Ce qui est inclus</h2>
+        <p>Quatre volets, adaptés à ce dont vous avez réellement besoin, voir <a href="how-we-work.html" style="text-decoration:underline; text-decoration-color:var(--copper);">comment la portée s'adapte</a>.</p>
+      </div>
+      <div class="value-list reveal">
+        <div class="value-row">
+          <div class="num">01</div>
+          <div>
+            <h4>Un bilan de préparation en gouvernance</h4>
+            <p>Un portrait clair d'où vous en êtes réellement, évalué par rapport à la norme ISO/IEC 42001, pas une liste de vérification générique étirée pour convenir.</p>
+          </div>
+        </div>
+        <div class="value-row">
+          <div class="num">02</div>
+          <div>
+            <h4>Un cadre adapté à votre entreprise</h4>
+            <p>Des politiques, des rôles et des contrôles qui correspondent à votre façon réelle de fonctionner, pas un cartable d'entreprise que personne dans votre équipe ne lira.</p>
+          </div>
+        </div>
+        <div class="value-row">
+          <div class="num">03</div>
+          <div>
+            <h4>Un accompagnement pratique à la mise en œuvre</h4>
+            <p>Aider votre équipe à l'utiliser réellement, pas seulement remettre un document et souhaiter bonne chance.</p>
+          </div>
+        </div>
+        <div class="value-row">
+          <div class="num">04</div>
+          <div>
+            <h4>Une assurance continue</h4>
+            <p>Un suivi périodique pour que la gouvernance évolue avec votre usage de l'IA, au lieu de devenir désuète le jour où elle est écrite.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container" style="max-width:820px;">
+      <div class="section-head reveal">
+        <h2>Foire aux questions</h2>
+        <p>Les questions qui reviennent avant qu'on nous contacte.</p>
+      </div>
+
+      <div class="faq-group reveal">
+        <p class="faq-group-title">Est-ce que c'est pour nous?</p>
+
+        <details class="faq-item">
+          <summary>Qu'est-ce que les Conseils en gouvernance de l'IA?</summary>
+          <div class="faq-answer">
+            <p>Les Conseils en gouvernance de l'IA vous aident à établir les politiques, processus, rôles et preuves nécessaires pour utiliser l'IA de façon responsable et cohérente, en utilisant la norme ISO/IEC 42001 comme fondation, adaptée à la taille de votre organisation, à votre usage de l'IA et à votre profil de risque. Ce n'est pas un document de conformité qu'on classe et qu'on oublie; c'est un système fonctionnel pour la façon dont les décisions liées à l'IA sont réellement prises et révisées.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>À qui ce service s'adresse-t-il?</summary>
+          <div class="faq-answer">
+            <p>Aux organisations qui utilisent déjà l'IA, qui l'intègrent à leurs opérations, ou qui développent des produits activés par l'IA, et de plus en plus, aux organisations qui doivent démontrer des pratiques responsables en IA à leurs clients, partenaires ou dirigeants, ou qui se préparent à des exigences réglementaires ou d'approvisionnement plus strictes. Vous n'avez pas besoin d'être une grande entreprise : le cadre s'adapte aussi facilement à la baisse qu'à la hausse.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Devons-nous viser la certification ISO/IEC 42001?</summary>
+          <div class="faq-answer">
+            <p>Non. Vous pouvez utiliser la norme ISO/IEC 42001 comme cadre de gouvernance pratique sans jamais viser la certification formelle, c'est ce que fait la plupart de notre clientèle. Cebean offre des services-conseils et un accompagnement à la mise en œuvre basés sur la norme; la certification elle-même est délivrée par un organisme de certification indépendant, et là où c'est un objectif futur, nous pouvons vous aider à vous y préparer.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Et si nous utilisons déjà l'IA sans gouvernance formelle?</summary>
+          <div class="faq-answer">
+            <p>C'est le point de départ le plus courant, pas une situation inhabituelle. Vous n'avez pas besoin d'avoir tout clarifié avant de faire appel à nous, la première étape consiste à comprendre ce qui est réellement utilisé et où se trouvent les vraies lacunes, pas à justifier après coup des décisions déjà prises.</p>
+          </div>
+        </details>
+      </div>
+
+      <div class="faq-group reveal">
+        <p class="faq-group-title">Qu'obtiendrions-nous réellement?</p>
+
+        <details class="faq-item">
+          <summary>Qu'est-ce que Cebean livre concrètement?</summary>
+          <div class="faq-answer">
+            <p>Quatre choses, adaptées à vos besoins : un bilan de préparation en gouvernance, un cadre adapté à votre entreprise, un accompagnement pratique à la mise en œuvre, et une assurance continue à mesure que votre usage de l'IA grandit. Voir le détail complet dans <a href="#whats-included">Ce qui est inclus</a> ci-dessus.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Comment se déroule le mandat?</summary>
+          <div class="faq-answer">
+            <p>Le même processus adapté derrière chaque mandat Cebean : Évaluer, Recommander, Rechercher et proposer, et Diriger la mise en œuvre, voir <a href="how-we-work.html">Comment la portée s'adapte</a> pour le portrait complet. La plupart des mandats de gouvernance n'ont besoin que des deux ou trois premières étapes; un plus petit nombre vont jusqu'à la mise en œuvre complète.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>Comment l'approche s'adapte-t-elle à notre organisation?</summary>
+          <div class="faq-answer">
+            <p>La portée est déterminée par votre usage réel de l'IA, votre environnement de gouvernance existant et vos objectifs, pas par un gabarit fixe. L'objectif n'est pas de créer de la bureaucratie; c'est d'établir une gouvernance suffisamment proportionnée pour être réellement utilisée.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>En quoi est-ce différent d'une politique sur l'IA ou d'une évaluation des risques?</summary>
+          <div class="faq-answer">
+            <p>Une politique est un seul document; une évaluation des risques est un seul instantané. La gouvernance est plus large et continue, elle relie les personnes, les droits de décision, les processus, la gestion des risques, les contrôles, la documentation et la surveillance continue en un seul système fonctionnel, pour qu'une politique rédigée par votre équipe juridique ne reste pas déconnectée de la façon dont les décisions se prennent réellement.</p>
+          </div>
+        </details>
+      </div>
+
+      <div class="faq-group reveal" style="margin-bottom:0;">
+        <p class="faq-group-title">Que signifie la norme ISO/IEC 42001 ici?</p>
+
+        <details class="faq-item">
+          <summary>Pourquoi la certification Lead Implementer ISO/IEC 42001 de Cebean est-elle importante?</summary>
+          <div class="faq-answer">
+            <p>Ça signifie que le cadre que vous obtenez s'appuie sur la véritable norme internationale pour les systèmes de gestion de l'IA, mené par une personne certifiée pour la mettre en œuvre, pas un cadre interne improvisé pour l'occasion. <a href="https://www.credly.com/badges/61c13d52-857f-49ee-91f7-62cab54d7a79/public_url" target="_blank" rel="noopener">Vérifiez le titre directement sur Credly</a>.</p>
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"Qu'est-ce que les Conseils en gouvernance de l'IA?","acceptedAnswer":{"@type":"Answer","text":"Les Conseils en gouvernance de l'IA vous aident à établir les politiques, processus, rôles et preuves nécessaires pour utiliser l'IA de façon responsable et cohérente, en utilisant la norme ISO/IEC 42001 comme fondation, adaptée à la taille de votre organisation, à votre usage de l'IA et à votre profil de risque."}},
+      {"@type":"Question","name":"À qui ce service s'adresse-t-il?","acceptedAnswer":{"@type":"Answer","text":"Aux organisations qui utilisent déjà l'IA, qui l'intègrent à leurs opérations, ou qui développent des produits activés par l'IA, et de plus en plus, aux organisations qui doivent démontrer des pratiques responsables en IA à leurs clients, partenaires ou dirigeants. Vous n'avez pas besoin d'être une grande entreprise."}},
+      {"@type":"Question","name":"Devons-nous viser la certification ISO/IEC 42001?","acceptedAnswer":{"@type":"Answer","text":"Non. Vous pouvez utiliser la norme ISO/IEC 42001 comme cadre de gouvernance pratique sans jamais viser la certification formelle. Cebean offre des services-conseils et un accompagnement à la mise en œuvre basés sur la norme; la certification elle-même est délivrée par un organisme de certification indépendant."}},
+      {"@type":"Question","name":"Et si nous utilisons déjà l'IA sans gouvernance formelle?","acceptedAnswer":{"@type":"Answer","text":"C'est le point de départ le plus courant, pas une situation inhabituelle. La première étape consiste à comprendre ce qui est réellement utilisé et où se trouvent les vraies lacunes, pas à justifier après coup des décisions déjà prises."}},
+      {"@type":"Question","name":"Qu'est-ce que Cebean livre concrètement?","acceptedAnswer":{"@type":"Answer","text":"Quatre choses, adaptées à vos besoins : un bilan de préparation en gouvernance, un cadre adapté à votre entreprise, un accompagnement pratique à la mise en œuvre, et une assurance continue à mesure que votre usage de l'IA grandit."}},
+      {"@type":"Question","name":"Comment se déroule le mandat?","acceptedAnswer":{"@type":"Answer","text":"Le même processus adapté derrière chaque mandat Cebean : Évaluer, Recommander, Rechercher et proposer, et Diriger la mise en œuvre. La plupart des mandats de gouvernance n'ont besoin que des deux ou trois premières étapes."}},
+      {"@type":"Question","name":"Comment l'approche s'adapte-t-elle à notre organisation?","acceptedAnswer":{"@type":"Answer","text":"La portée est déterminée par votre usage réel de l'IA, votre environnement de gouvernance existant et vos objectifs, pas par un gabarit fixe. L'objectif est une gouvernance suffisamment proportionnée pour être réellement utilisée."}},
+      {"@type":"Question","name":"En quoi est-ce différent d'une politique sur l'IA ou d'une évaluation des risques?","acceptedAnswer":{"@type":"Answer","text":"Une politique est un seul document; une évaluation des risques est un seul instantané. La gouvernance est plus large et continue, elle relie les personnes, les droits de décision, les processus, la gestion des risques, les contrôles, la documentation et la surveillance continue en un seul système."}},
+      {"@type":"Question","name":"Pourquoi la certification Lead Implementer ISO/IEC 42001 de Cebean est-elle importante?","acceptedAnswer":{"@type":"Answer","text":"Ça signifie que le cadre que vous obtenez s'appuie sur la véritable norme internationale pour les systèmes de gestion de l'IA, mené par une personne certifiée pour la mettre en œuvre, pas un cadre interne improvisé pour l'occasion."}}
+    ]
+  }
+  </script>
+
+  <section class="cta-band">
+    <div class="container">
+      <h2>Vous ne savez pas encore de combien de gouvernance vous avez besoin?</h2>
+      <p>C'est exactement à ça que sert un bilan de préparation. Aucune proposition requise pour le savoir.</p>
+      <a href="contact.html" class="btn">Réservez votre consultation gratuite <span class="arrow">→</span></a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="brand" style="font-size:20px;">
+      <svg class="brand-mark" viewBox="0 0 512 512" width="26" height="26" aria-hidden="true">
+        <rect width="512" height="512" rx="108" fill="#171B22"/>
+        <path d="M 342.03 137.9 A 150 150 0 1 0 342.03 374.1" fill="none" stroke="#F5F3ED" stroke-width="54" stroke-linecap="round"/>
+        <circle cx="342.03" cy="137.9" r="40" fill="#B8763B"/>
+      </svg>
+      <span class="brand-word">Cebean<span class="brand-suffix">Inc.</span></span>
+    </a>
+        <p style="margin-top:14px; max-width:34ch; color:var(--slate); font-size:14.5px;">Consultation et logiciels bilingues (FR/EN) en transformation numérique, mise en œuvre de l'IA, commerce et conformité, basés à Toronto.</p>
+        <div class="bi-badge" style="margin-top:16px;"><b>FR</b> <a href="../ai-governance-advisory.html">EN</a></div>
+      </div>
+      <div>
+        <h5>Site</h5>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="how-we-work.html">Notre façon de travailler</a></li>
+          <li><a href="ai-governance-advisory.html">Conseils en gouvernance de l'IA</a></li>
+          <li><a href="consulting.html">Consultation</a></li>
+          <li><a href="software.html">Logiciels</a></li>
+          <li><a href="blog.html">Blogue</a></li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="partners.html">Partenaires</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="contact.html">Nous joindre</a></li>
+          <li><a href="https://www.linkedin.com/company/cebean-inc/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="contact.html">Réserver un appel</a></li>
+          <li>Toronto (Ontario)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span class="year"></span> Cebean Inc. Tous droits réservés.</span>
+      <span>Logiciels conçus pour le monde entier. Consultation enracinée au Canada.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
