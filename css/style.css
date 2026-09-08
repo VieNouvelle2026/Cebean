@@ -94,7 +94,7 @@ p{ margin: 0 0 1em; }
 .feature-card.theme-blue .fc-cat{ color: var(--slate-blue); }
 .feature-card.theme-copper .fc-cat{ color: var(--copper); }
 .feature-card .fc-visual{
-  margin-top:auto; margin-bottom:14px; height:120px; border-radius:6px; overflow:hidden;
+  margin-bottom:14px; height:120px; border-radius:6px; overflow:hidden;
   display:flex; align-items:center; justify-content:center;
 }
 .feature-card .fc-visual svg{ width:70%; height:70%; }
